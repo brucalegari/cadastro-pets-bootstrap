@@ -1,56 +1,76 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- Começo menu -->
+<nav class="nav-principal navbar navbar-expand bg-light navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">
+
+    <!-- Logo da empresa -->
+    <a class="navbar-brand" href="#" title="Peti9">
       <img src="./assets/logo-peti9.png" alt="Peti9">
     </a>
 
+    <!-- Redes sociais -->
     <div class="collapse navbar-collapse">
-      <span class="navbar-nav ml-auto">
-        <button type="button" class="btn btn-danger" (click)="isCollapsed = !isCollapsed"
-        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-
-        <div id="collapseBasic" [collapse]="isCollapsed">
-          <div class="well well-lg card card-block card-header">Some content</div>
-        </div>  
-      </span>
-
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ml-auto pr-2 social-media">
         <li class="nav-item">
-          <a href="" class="nav-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/Peti9Sistemas/" target="_blank" class="nav-link">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/peti9sistema/" target="_blank" class="nav-link">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
         </li>
       </ul>
-    
+
+      <!-- Menu hamburguer -->
+      <span class="navbar-nav">
+        <button type="button" class="btn" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+          <i class="fa fa-bars text-light" aria-hidden="true"></i>
+        </button>
+
+        <div id="collapseBasic" [collapse]="isCollapsed" class="position-absolute">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cadastro Pets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>  
+      </span>   
     </div>
+
   </div>
 </nav>
+<!-- Fim menu -->
 
-
-
-<carousel [pauseOnFocus]="true">
+<!-- Começo banner -->
+<carousel [pauseOnFocus]="true" class="d-none d-sm-block">
   <slide>
-    <img src="https://source.unsplash.com/1366x400?nature" alt="First slide" style="display: block; width: 100%;">
+    <img src="./assets/dog-matthew-henry.jpg" alt="First slide" class="img-fluid">
     <div class="carousel-caption d-none d-md-block">
-      <h3>Kailou</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Jon Snow</h3>
+      <p>Conheça sua história <a class="btn text-light btn-sm" href="#">clique aqui.</a></p>
     </div>
   </slide>
   <slide>
-    <img src="https://source.unsplash.com/1366x400?water" alt="Second slide" style="display: block; width: 100%;">
+    <img src="./assets/cat-mikhail-vasilyev.jpg" alt="Second slide" class="img-fluid">
     <div class="carousel-caption d-none d-md-block">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Arya Stark</h3>
+      <p>Conheça sua história <a class="btn text-light btn-sm" href="#">clique aqui.</a></p>
     </div>
   </slide>
   <slide>
-    <img src="https://source.unsplash.com/1366x400?animal" alt="Third slide" style="display: block; width: 100%;">
+    <img src="./assets/cat-marko-blazevic.jpg" alt="Third slide" class="img-fluid">
     <div class="carousel-caption d-none d-md-block">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Daenerys Targaryen</h3>
+      <p>Conheça sua história <a class="btn text-light btn-sm" href="#">clique aqui.</a></p>
     </div>
   </slide>
 </carousel>
+<!-- Fim banner -->

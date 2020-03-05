@@ -1,10 +1,50 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~font-awesome/css/font-awesome.min.css';
 
-$tete-color: #000;
+$color-principal-orange: #cb5124;
+$color-secundaria-green: #1d9b88;
 
-.navbar {
-    .rede-sociais {
-        background: $tete-color;
+/*** Menu principal ***/
+.nav-principal {
+    .navbar-collapse {
+        .navbar-nav {
+            &.social-media {
+                .nav-item {
+                    .nav-link {
+                        color: $color-secundaria-green;
+                    }
+                }
+            }
+            .btn {
+                background-color: $color-principal-orange;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                border-radius: 100%;
+                z-index: 91;
+            }
+
+            #collapseBasic {
+                width: 176px;
+                top: 0;
+                right: 0;
+                z-index: 90;
+                padding: 100px 0;
+                text-align: center;
+                border-radius: 0 0 0 10px;
+                background-color: $color-principal-orange;
+            }
+        }
     }
 }
+/*** Fim menu principal ***/
+
+
+/*** Banner home ***/
+carousel {
+    slide {
+        .btn {
+            background-color: $color-secundaria-green;
+        }
+    }
+}
+/*** Fim banner home ***/
