@@ -1,0 +1,50 @@
+<!-- Começo menu -->
+<nav class="nav-principal navbar navbar-expand bg-light navbar-dark fixed-top">
+    <div class="container">
+        
+      <!-- Logo da empresa -->
+      <a class="navbar-brand" href="#" title="Peti9">
+        <img src="./assets/logo-peti9.png" alt="Peti9">
+      </a>
+  
+      <!-- Redes sociais -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto pr-2 social-media">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/Peti9Sistemas/" target="_blank" class="nav-link">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/peti9sistema/" target="_blank" class="nav-link">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+  
+        <!-- Menu hamburguer -->
+        <span class="navbar-nav">
+          <button type="button" class="btn" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+            <i class="fa fa-bars text-light" aria-hidden="true"></i>
+          </button>
+  
+          <div id="collapseBasic" [collapse]="isCollapsed" class="position-absolute">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cadastro Pets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>  
+        </span>   
+      </div>
+  
+    </div>
+</nav>
+<!-- Fim menu -->
