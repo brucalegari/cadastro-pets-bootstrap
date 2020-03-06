@@ -53,6 +53,9 @@ carousel {
 /*** Lista cadastro pets ***/
 #cadastro {
     .card {
+        .btn-edit {
+            right: 0;
+        }
         .card-body {
             background-color: $color-secundaria-green;
         }
@@ -60,6 +63,13 @@ carousel {
             .list-group-item {
                 font-size: 0.8rem;
             }
+        }
+    }
+    .btn-cadastrar {
+        margin-top: 32px;
+        background-color: $color-principal-orange;
+        @media (max-width: 575.98px) { 
+            margin-top: 0;
         }
     }
 }

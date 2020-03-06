@@ -78,12 +78,79 @@
 <!-- Começo cadastro de pets -->
 <section id="cadastro" class="pb-5">
   <div class="container">
-    <h1 class="display-5 text-center pt-4 pb-5 text-dark">{{ subTitulo }}</h1>
+    <h1 class="display-5 text-center pt-4 pb-4 text-dark">{{ title }}</h1>
+
+     <!-- Formulário de cadastramento do pet -->
+    <div class="row mb-5 text-dark">
+      <div class="col-12">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-3 col-lg-4">
+              <label for="nomePet">Nome do Pet</label>
+              <input type="text" class="form-control" id="nomePet" placeholder="Nome do Pet">
+            </div>
+            <div class="form-group col-md-3 col-lg-3">
+              <label for="especiePet">Espécie</label>
+              <select id="especiePet" class="form-control">
+                <option selected>Selecione</option>
+                <option>Gato</option>
+                <option>Cachorro</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3 col-lg-2">
+              <label for="portePet" class="d-block mb-3">Porte</label>
+              <div class="custom-control custom-radio custom-control-inline mr-2">
+                <input type="radio" id="porteP" name="porte" class="custom-control-input">
+                <label class="custom-control-label" for="porteP">P</label>
+              </div>
+
+              <div class="custom-control custom-radio custom-control-inline mr-2">
+                <input type="radio" id="porteM" name="porte" class="custom-control-input">
+                <label class="custom-control-label" for="porteM">M</label>
+              </div>
+
+              <div class="custom-control custom-radio custom-control-inline mr-2">
+                <input type="radio" id="porteG" name="porte" class="custom-control-input">
+                <label class="custom-control-label" for="porteG">G</label>
+              </div>
+            </div>
+
+            <div class="form-group col-md-3 col-lg-3">
+              <label for="dataNascimento">Data de Nascimento</label>
+              <input type="date" name="dataNascimento" class="form-control">
+            </div>
+          </div>
+          <div class="form-row">
+            
+            <div class="form-group col-md-6 col-lg-4">
+              <label for="uploadFoto">Insira uma foto do seu pet</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label" for="inputGroupFile01">Selecione uma foto</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group col-md-4 col-lg-3">
+              <button type="submit" class="btn btn-danger btn-cadastrar">Cadastrar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Pets cadastrados -->
     <div class="row">
 
       <!-- Info pet -->
       <div class="col-sm-6 col-md-3 mb-4">
         <div class="card">
+         <button type="button" class="btn btn-edit position-absolute" title="Editar">
+          <i class="fa fa-pencil-square-o text-warning" aria-hidden="true"></i>
+         </button>
           <img src="./assets/cat-cong-h.jpg" class="card-img-top" alt="Phoebe">
           <div class="card-body pt-2 pb-2">
             <h5 class="card-title mb-1 text-light">Phoebe</h5>
@@ -99,6 +166,9 @@
       <!-- Info pet -->
       <div class="col-sm-6 col-md-3 mb-4">
         <div class="card">
+          <button type="button" class="btn btn-edit position-absolute" title="Editar">
+            <i class="fa fa-pencil-square-o text-warning" aria-hidden="true"></i>
+           </button>
           <img src="./assets/dog-jamie-street.jpg" class="card-img-top" alt="Gilbert">
           <div class="card-body pt-2 pb-2">
             <h5 class="card-title mb-1 text-light">Gilbert</h5>
@@ -114,6 +184,9 @@
       <!-- Info pet -->
       <div class="col-sm-6 col-md-3 mb-4">
         <div class="card">
+          <button type="button" class="btn btn-edit position-absolute" title="Editar">
+            <i class="fa fa-pencil-square-o text-warning" aria-hidden="true"></i>
+           </button>
           <img src="./assets/cat-ludemeula-fernandes.jpg" class="card-img-top" alt="Meredith">
           <div class="card-body pt-2 pb-2">
             <h5 class="card-title mb-1 text-light">Meredith</h5>
@@ -129,6 +202,9 @@
       <!-- Info pet -->
       <div class="col-sm-6 col-md-3 mb-4">
         <div class="card">
+          <button type="button" class="btn btn-edit position-absolute" title="Editar">
+            <i class="fa fa-pencil-square-o text-warning" aria-hidden="true"></i>
+           </button>
           <img src="./assets/dog-marliese-streefland.jpg" class="card-img-top" alt="Shawn">
           <div class="card-body pt-2 pb-2">
             <h5 class="card-title mb-1 text-light">Shawn</h5>
@@ -144,6 +220,9 @@
       <!-- Info pet -->
       <div class="col-sm-6 col-md-3 mb-4">
         <div class="card">
+          <button type="button" class="btn btn-edit position-absolute" title="Editar">
+            <i class="fa fa-pencil-square-o text-warning" aria-hidden="true"></i>
+           </button>
           <img src="./assets/cat-miron-cristina.jpg" class="card-img-top" alt="Anitta">
           <div class="card-body pt-2 pb-2">
             <h5 class="card-title mb-1 text-light">Anitta</h5>
@@ -169,7 +248,7 @@
         <h4>Endereço</h4>
         <p>R. Manoel Antunes Corrêa, 1277<br>Centro – Tubarão/SC</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-3 mb-md-0">
         <h4>Redes socias</h4>
         
         <span class="redes-sociais">
