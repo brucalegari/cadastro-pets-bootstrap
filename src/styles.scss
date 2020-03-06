@@ -63,3 +63,24 @@ carousel {
         }
     }
 }
+/*** Fim lista cadastro pets ***/
+
+/*** Rodapé ***/
+footer {
+    background-color: $color-principal-orange;
+
+    .redes-sociais {
+        a {
+            display: -webkit-inline-box;
+            display: inline-flex;
+            width: 1.25rem;
+            height: 1.25rem;
+            font-size: 1.3rem;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+    }
+}
+/*** Fim rodapé ***/
