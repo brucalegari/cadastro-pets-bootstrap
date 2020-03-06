@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Cadastre Pets';
+  subTitulo = "Lista de Pets Cadastrados";
   isCollapsed = true;
 }

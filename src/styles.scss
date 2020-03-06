@@ -3,6 +3,7 @@
 
 $color-principal-orange: #cb5124;
 $color-secundaria-green: #1d9b88;
+$color-secundaria-green-opacity: rgba(29, 155, 136, 0.26);
 
 /*** Menu principal ***/
 .nav-principal {
@@ -48,3 +49,17 @@ carousel {
     }
 }
 /*** Fim banner home ***/
+
+/*** Lista cadastro pets ***/
+#cadastro {
+    .card {
+        .card-body {
+            background-color: $color-secundaria-green;
+        }
+        .list-group {
+            .list-group-item {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
