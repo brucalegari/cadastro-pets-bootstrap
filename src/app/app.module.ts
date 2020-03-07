@@ -8,19 +8,19 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 
-import { NavegationComponent } from './navegation/navegation.component';
 import { BannerComponent } from './banner/banner.component';
 import { CadastramentoPetsComponent } from './cadastramento-pets/cadastramento-pets.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { NavegacaoComponent } from './navegacao/navegacao.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavegationComponent,
     BannerComponent,
     CadastramentoPetsComponent,
-    RodapeComponent
+    RodapeComponent,
+    NavegacaoComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -30,7 +30,7 @@ import { RodapeComponent } from './rodape/rodape.component';
     CollapseModule.forRoot()
   ],
   exports: [
-    NavegationComponent,
+    NavegacaoComponent,
     BannerComponent,
     CadastramentoPetsComponent,
     RodapeComponent
