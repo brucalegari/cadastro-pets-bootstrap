@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
@@ -25,6 +26,7 @@ import { NavegacaoComponent } from './navegacao/navegacao.component';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
+    FormsModule,
     BsDropdownModule.forRoot(),
     CarouselModule.forRoot(),
     CollapseModule.forRoot()
@@ -38,4 +40,4 @@ import { NavegacaoComponent } from './navegacao/navegacao.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
